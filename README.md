@@ -1,5 +1,5 @@
 # Image-Caption-Generator
 Image Caption Generator Model trained on Flicker Dataset.
 
-Image Dataset link - https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_Dataset.zip
-Captions Dataset link - https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_text.zip - (available in Flick8k.token.txt)
+- <a href='https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_Dataset.zip' >Image Dataset link </a> 
+- <a href= 'https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_text.zip' >Captions Dataset link </a> (available in Flick8k.token.txt)
