@@ -60,3 +60,5 @@ We've got our image features, and we're ready to make our captions come to life.
 
 ### Caption Generation
 Caption generation is the process of using computer vision and natural language processing to recognize the context of an image and describe it in a natural language. Caption generators can be used to create engaging and attention-grabbing captions for social media posts.
+
+<hr>
