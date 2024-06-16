@@ -1,0 +1,10 @@
+tensorflow
+numpy
+dvc
+notebook
+ensure
+Flask
+Pillow
+pickle
+
+-e .
