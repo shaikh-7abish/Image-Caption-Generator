@@ -5,7 +5,7 @@ stages:
       - src/ImgCapGen/pipeline/prepareVGG.py
       - config/config.yaml
     outs:
-      - artifacts/prepare_vgg_model/vgg16.h5
+      - artifacts/prepare_vgg_model
 
 
   prepare_base_model:

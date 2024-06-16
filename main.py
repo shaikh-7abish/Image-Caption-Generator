@@ -12,12 +12,12 @@ except Exception as e:
     logger.exception(e)
     raise e
     
-STAGE_NAME = 'PREDICTION STAGE'
-try:
-    logger.info(f">>>>>-- {STAGE_NAME} started. --<<<<<")
-    obj = Prediction()
-    obj.main("traffic.jpg")
-    logger.info(f">>>>>-- {STAGE_NAME} successfully completed --<<<<<\n\nx====================x")
-except Exception as e:
-    logger.exception(e)
-    raise e
+# STAGE_NAME = 'PREDICTION STAGE'
+# try:
+#     logger.info(f">>>>>-- {STAGE_NAME} started. --<<<<<")
+#     obj = Prediction()
+#     obj.main("traffic.jpg")
+#     logger.info(f">>>>>-- {STAGE_NAME} successfully completed --<<<<<\n\nx====================x")
+# except Exception as e:
+#     logger.exception(e)
+#     raise e

@@ -27,11 +27,10 @@ def read_yaml(path_to_yaml: Path) -> ConfigBox:
         raise e
     
 @ensure_annotations
-def create_directories(path_to_directories: list, verbose=True):
-    for path in path_to_directories:
-        os.makedirs(path, exist_ok=True)
-        if verbose:
-            logger.info(f"created directory at: {path}")
+def create_directories(path_to_directories: str, verbose=True):
+    os.makedirs(path_to_directories, exist_ok=True)
+    if verbose:
+        logger.info(f"created directory at: {path_to_directories}")
 
 @ensure_annotations
 def load_pickle(path_to_pickle_file: Path) -> ConfigBox:

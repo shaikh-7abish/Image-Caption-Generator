@@ -6,7 +6,7 @@ class PrepareVGG:
     def __init__(self, config: PrepareVGGConfig):
         self.config = config
         create_directories(
-            path_to_directories= config.root_dir,
+            path_to_directories= self.config.root_dir,
             verbose= True
         )
 

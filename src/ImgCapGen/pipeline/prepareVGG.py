@@ -8,8 +8,8 @@ class PrepareVGG16Pipeline:
     def __init__(self) -> None:
         pass
 
-    def main(self, img):
+    def main(self):
         config = ConfigurationManager()
         pred_config = config.get_vgg16_config()
-        pred_config = PrepareVGG()
-        pred_config.get_model()
+        pred_model = PrepareVGG(config= pred_config)
+        pred_model.get_model()
