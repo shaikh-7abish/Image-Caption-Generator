@@ -5,6 +5,8 @@ notebook
 ensure
 Flask
 Pillow
-pickle
+pyYAML
+pathlib
+dvc
 
 -e .

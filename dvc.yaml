@@ -1,0 +1,20 @@
+stages:
+  prepare_vgg16_model:
+    cmd: python src/ImgCapGen/pipeline/prepareVGG.py
+    deps:
+      - src/ImgCapGen/pipeline/prepareVGG.py
+      - config/config.yaml
+    outs:
+      - artifacts/prepare_vgg_model/vgg16.h5
+
+
+  prepare_base_model:
+    cmd: python src/ImgCapGen/pipeline/predictionpipeline.py
+    deps:
+      - src/ImgCapGen/pipeline/predictionpipeline.py
+      - config/config.yaml
+      - artifacts/model.h5
+      - artifacts/prepare_vgg_model/vgg16.h5
+      - artifacts/tokenizer.p
+    outs:
+      - results.txt

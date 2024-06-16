@@ -1,0 +1,10 @@
+artifacts_root: artifacts
+
+prepare_vgg_model:
+  root_dir: artifacts/prepare_vgg_model
+  vgg_model_path: artifacts/prepare_vgg_model/vgg16.h5
+
+prediction:
+  tokenizer: artifacts/tokenzier.p
+  drive_fold: drive/MyDrive/Img-Cap/
+  model: artifacts/model.h5

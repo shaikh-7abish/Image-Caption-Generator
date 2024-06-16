@@ -8,7 +8,7 @@ __version__ = "0.0.0"
 
 REPO_NAME = "IMAGE-CAPTION-GENERATOR"
 AUTHOR_USER_NAME = "shaikh-7abish"
-SRC_REPO = "Img-Cap-Gen"
+SRC_REPO = "ImgCapGen"
 AUTHOR_EMAIL = "tabishshaikh764@gmail.com"
 
 
