@@ -8,9 +8,11 @@ class Prediction:
 
     def generate_cap(self, imgfile, max_length = 34):
         features = extract_features(imgfile)
+        logger.info("Feature Extracted Successfully")
         start = '<start>'
-        tokenizer = load_pickle(self.config.tokenizer)
         model = load_model(self.config.model)
+        logger.info("Model Loaded Successfully")
+        tokenizer = load_pickle(self.config.tokenizer)
 
         for i in range(max_length):
             sequence = tokenizer.texts_to_sequences([start])[0]

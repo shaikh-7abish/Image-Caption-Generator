@@ -33,22 +33,16 @@ def create_directories(path_to_directories: str, verbose=True):
         logger.info(f"created directory at: {path_to_directories}")
 
 @ensure_annotations
-def load_pickle(path_to_pickle_file: Path) -> ConfigBox:
-    pickle_file = pickle.load(open(path_to_pickle_file, 'rb'))
+def load_pickle(path_to_pickle_file: str) -> ConfigBox:
+    file = open(path_to_pickle_file, 'rb')
+    pickle_file = pickle.load(file)
     logger.info(f"Successfully loaded Pickle file from: {path_to_pickle_file}")
     return ConfigBox(pickle_file)
 
-@ensure_annotations
-def load_model(path_to_model: Path) -> tf.keras.Model:
-    model = tf.keras.Models.load_model(path_to_model)
+def load_model(path_to_model: str) -> tf.keras.Model:
+    model = tf.keras.models.load_model(path_to_model)
     logger.info(f"Successfully loaded Model from: {path_to_model}")
     return model
-
-def load_vgg():
-    vgg = VGG16()
-    vgg = Model(inputs = vgg.inputs, outputs = vgg.layers[-2].output)
-    logger.info('VGG16 Loaded')
-    return vgg
 
 def save_model(path: Path, model: tf.keras.Model):
         model.save(path)

@@ -1,3 +1,5 @@
 artifacts/model.h5
+artifacts/prepare_vgg_model/*
 logs/*
 traffic.jpg
+tp.py
