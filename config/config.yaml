@@ -5,6 +5,6 @@ prepare_vgg_model:
   vgg_model_path: artifacts/prepare_vgg_model/vgg16.h5
 
 prediction:
-  tokenizer: artifacts/tokenizer.p
+  tokenizer: ../drive/MyDrive/Img-Cap/Project/artifacts/tokenizer.p
   drive_fold: drive/MyDrive/Img-Cap/
-  model: artifacts/model.h5
+  model: ../drive/MyDrive/Img-Cap/Project/artifacts/model.h5

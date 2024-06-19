@@ -14,5 +14,5 @@ class PredictionPipeline:
         pred_config = config.get_prediction_config()
         pred_config = Prediction(config= pred_config)
         caption = pred_config.generate_cap(img)
-        save_result("results.txt", caption)
+        # save_result("results.txt", caption)
         print(caption)

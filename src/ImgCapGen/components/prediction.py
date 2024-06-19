@@ -16,7 +16,7 @@ class Prediction:
 
         for i in range(max_length):
             sequence = tokenizer.texts_to_sequences([start])[0]
-            sequence = padding([sequence], maxlen=max_length)
+            sequence = pad_sequences([sequence], maxlen=max_length)
 
             yhat = model.predict([features,sequence], verbose= 1)
             predicted_index = np.argmax(yhat)

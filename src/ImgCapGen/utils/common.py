@@ -33,11 +33,11 @@ def create_directories(path_to_directories: str, verbose=True):
         logger.info(f"created directory at: {path_to_directories}")
 
 @ensure_annotations
-def load_pickle(path_to_pickle_file: str) -> ConfigBox:
+def load_pickle(path_to_pickle_file: str):
     file = open(path_to_pickle_file, 'rb')
     pickle_file = pickle.load(file)
     logger.info(f"Successfully loaded Pickle file from: {path_to_pickle_file}")
-    return ConfigBox(pickle_file)
+    return pickle_file
 
 def load_model(path_to_model: str) -> tf.keras.Model:
     model = tf.keras.models.load_model(path_to_model)
@@ -66,15 +66,13 @@ def extract_features(imgfile):
 def padding(sequence, max_length: int):
     return pad_sequences([sequence], maxlen = max_length)
 
-@ensure_annotations
-def get_word_from_index(index: int, tokenizer) -> str:
+def get_word_from_index(index, tokenizer) -> str:
     return next((word for word, idx in tokenizer.word_index.items() if idx == index), None)
 
-@ensure_annotations
-def save_result(result_file_path: Path, result: str):
-    if result_file_path.exists():
-        with result_file_path.open("a", encoding="utf-8") as file:
+def save_result(result_file_path, result):
+    if os.path.exists(result_file_path):
+        with open(result_file_path, "a", encoding="utf-8") as file:
             file.write(result + "\n")
     else:
-        with result_file_path.open("w", encoding="utf-8") as file:
+        with open(result_file_path, "w", encoding="utf-8") as file:
             file.write(result + "\n")
