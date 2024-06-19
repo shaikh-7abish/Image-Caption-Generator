@@ -2,7 +2,7 @@
 
 - <a href='https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_Dataset.zip' >Image Dataset link </a> 
 - <a href= 'https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_text.zip' >Captions Dataset link </a> (available in Flick8k.token.txt)
-- <a href= 'https://drive.google.com/drive/folders/1VavOXKeBD2JnMCtS4FrbEz01AuYPp302?usp=drive_link'>Saved Files</a>
+- <a href= 'https://drive.google.com/drive/folders/1VavOXKeBD2JnMCtS4FrbEz01AuYPp302?usp=sharing'>Saved Files</a>
 
 <hr>
 
@@ -62,3 +62,24 @@ We've got our image features, and we're ready to make our captions come to life.
 Caption generation is the process of using computer vision and natural language processing to recognize the context of an image and describe it in a natural language. Caption generators can be used to create engaging and attention-grabbing captions for social media posts.
 
 <hr>
+
+### To Run
+- Clone the Repository:
+  - Clone the GitHub repository to your Colab environment.
+  - git clone https://github.com/shaikh-7abish/Image-Caption-Generator.git
+
+- Navigate to the Repository Directory:
+  - Change the directory to the cloned repository.
+  - cd Image-Caption-Generator
+
+- Install Dependencies:
+  - Install the required dependencies specified in requirements.txt.
+  - pip install -r requirements.txt
+
+- Run the Script:
+  - Run the main script or any specific script in the repository.
+  - python main.py
+
+- Pass the Image:
+  - Write Image path in Text Box
+  - img.jpg
