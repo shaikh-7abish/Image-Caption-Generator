@@ -7,4 +7,4 @@ prepare_vgg_model:
 prediction:
   tokenizer: ../drive/MyDrive/Img-Cap/Project/artifacts/tokenizer.p
   drive_fold: drive/MyDrive/Img-Cap/
-  model: ../drive/MyDrive/Img-Cap/Project/artifacts/model.h5
+  model: ../drive/MyDrive/Img-Cap/Project/artifacts/flickr30k_model.h5
