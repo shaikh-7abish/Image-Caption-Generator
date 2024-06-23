@@ -6,7 +6,7 @@ class Prediction:
     def __init__(self, config: PredictionConfig):
         self.config = config
 
-    def generate_cap(self, imgfile, max_length = 34):
+    def generate_cap(self, imgfile, max_length = 34): # 34 / 74
         features = extract_features(imgfile)
         logger.info("Feature Extracted Successfully")
         start = '<start>'
